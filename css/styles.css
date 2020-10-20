@@ -455,6 +455,12 @@
   border-color: var(--acsent-color);
 }
 
+.form-input:focus,
+.form-comment:focus {
+  outline: none; /* Убираем контур */
+  border-color: var(--acsent-color);
+}
+
 .form-text {
   display: block;
   margin-bottom: 12px;
