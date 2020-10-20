@@ -428,6 +428,7 @@
 .form-comment {
   height: 120px;
   padding: 12px 16px;
+  resize: none;
 
   transition-property: fill, border-color;
   transition-duration: 250ms;
