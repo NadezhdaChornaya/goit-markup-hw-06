@@ -496,7 +496,7 @@
   border-color: transparent;
   background-color: var(--acsent-color);
   background-origin: border-box;
-  background-image: url("../img/icon\ check.svg");
+  background-image: url("../img/check.svg");
 }
 
 .form-agreement {
