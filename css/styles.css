@@ -440,7 +440,7 @@
 .form-input {
   position: relative;
   display: block;
-  padding: 0;
+  padding: 0 40px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -475,10 +475,28 @@
 }
 
 .form-label-agree {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+}
+
+.border-checkbox {
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+}
+
+.checkbox:checked + .border-checkbox {
+  border-color: transparent;
+  background-color: var(--acsent-color);
+  background-origin: border-box;
+  background-image: url("../img/icon\ check.svg");
 }
 
 .form-agreement {
@@ -523,29 +541,7 @@
   overflow: hidden;
 }
 
-.border-icon {
-  margin-right: 8px;
-  height: 15px;
-}
-
 .form-checkbox {
-  display: flex;
-  align-items: center;
+  position: relative;
   margin-bottom: 30px;
-}
-
-.agreement-icon {
-  position: absolute;
-  height: 15px;
-  border-radius: 2px;
-  background-color: var(--acsent-color);
-  opacity: 0;
-
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-}
-
-.checkbox:checked ~ .agreement-icon {
-  opacity: 1;
 }

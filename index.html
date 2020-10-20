@@ -490,24 +490,19 @@
             ></textarea>
           </div>
           <div class="form-checkbox">
-            <input
-              type="checkbox"
-              value="agreement"
-              id="agreement"
-              class="form-input checkbox"
-            />
-
-            <svg class="border-icon" width="16px" hight="15px">
-              <use href="./img/sprite.svg#check-box-border"></use>
-            </svg>
-            <label for="agreement" class="form-label-agree"
-              >Соглашаюсь с рассылкой и принимаю
+            <!-- <svg class="agreement-icon" width="16px" hight="15px">
+              <use href="./img/sprite.svg#check-box"></use>
+            </svg> -->
+            <label class="form-label-agree">
+              <input
+                type="checkbox"
+                value="agreement"
+                class="form-input checkbox"
+              />
+              <span class="border-checkbox"></span>
+              Соглашаюсь с рассылкой и принимаю
               <a href="" class="form-agreement">Условия договора</a>
             </label>
-
-            <svg class="agreement-icon" width="16px" hight="15px">
-              <use href="./img/sprite.svg#check-box"></use>
-            </svg>
           </div>
           <div class="form-button">
             <button type="submit" class="standard-button">
